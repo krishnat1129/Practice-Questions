@@ -1,0 +1,12 @@
+looping in python
+for iterating over an index of a list
+list = [11,22,33,44,55]
+if I simply use 
+---
+for i in list : 
+     print(list(i))
+---
+**[Note]** index starts from 0 in python but while iterating "for" loop it iterates over value. 
+It would given an index out of bound error as it would try to access list[11] (element on the 11th position) which is out of bounds as list only has 5 elements
+
+=> Hence use "for i in range(len(list))" while looping over index of a list.
