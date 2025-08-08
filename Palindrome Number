@@ -1,0 +1,14 @@
+Python Function to check if the input number is a Plaindrome 
+
+x = int(input("what is the number ")) # takes in the input and type casts it into integer
+def ispalindrome(x):                  # function checking for the number
+    if x<0:
+        return False
+    original = x
+    rev=0
+    while x!=0:
+        rev=rev*10+x%10
+        x=x//10
+    return original==rev
+    
+print(ispalindrome(x))
